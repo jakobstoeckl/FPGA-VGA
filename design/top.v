@@ -1,4 +1,3 @@
-//`include "text_ram.v"
 `include "pll.v"
 `include "vga.v"
 `include "debounce.v"
