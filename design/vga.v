@@ -37,40 +37,6 @@ assign ram_addr = (w_h_counter < 640) ? text_addr : i_addr;
 wire we2;
 assign we2 = ~w_h_sync;
 
-//wire w_h_sync_original;
-//wire w_v_sync_original;
-//wire w_valid_area;
-//
-//reg hsync_delayed1;
-//reg hsync_delayed2;
-//reg hsync_delayed3;
-//
-//reg vsync_delayed1;
-//reg vsync_delayed2;
-//reg vsync_delayed3;
-//
-//reg inDisplayAreaDelayed1;
-//reg inDisplayAreaDelayed2;
-//
-//always@(posedge i_clk)
-//begin
-//	hsync_delayed1 <= w_h_sync_original;
-//	hsync_delayed2 <= hsync_delayed1;
-//	hsync_delayed3 <= hsync_delayed2;
-//
-//	vsync_delayed1 <= w_v_sync_original;
-//	vsync_delayed2 <= vsync_delayed1;
-//	vsync_delayed3 <= vsync_delayed2;
-//
-//	inDisplayAreaDelayed1 <= w_valid_area;
-//	inDisplayAreaDelayed2 <= inDisplayAreaDelayed1;
-//end
-//
-//assign o_h_sync = hsync_delayed2;
-//assign o_v_sync = vsync_delayed2;
-//assign o_valid_area = inDisplayAreaDelayed1;
-
-
 hvgenerator inst_hvgenerator(
     .i_clk(i_clk),
     .o_h_sync(w_h_sync),
