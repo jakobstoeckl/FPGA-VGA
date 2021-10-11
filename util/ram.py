@@ -2,14 +2,15 @@ import random
 import string
 
 ar = ["0"]*0x1000
+ar[0] = "3E"
 
-counter = 0
-for item in ar:
+#for random character generation
+#counter = 0
+#for item in ar:
     #ar[counter] = (format(ord(random.choice(string.ascii_letters)), "x"))
-    ar[counter] = 0x00
-    counter = counter + 1
+    #counter = counter + 1
 
-with open("ram.txt", "w") as out:
+with open("ram.mem", "w") as out:
     for item in ar:
         out.write("%s\n" % item)
 out.close()
