@@ -1,4 +1,0 @@
-res       = 640*480
-char      =   8* 16
- lines    =  80
-vlines    =  30
