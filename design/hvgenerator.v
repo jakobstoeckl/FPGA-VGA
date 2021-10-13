@@ -41,7 +41,7 @@ always @ ( posedge i_clk )
 
 always @(posedge i_clk)
   begin
-    r_h_sync <= ((r_h_counter > (640 + 16)) && (r_h_counter < (640 + 16 + 65)));   // active for 56 clocks
+    r_h_sync <= ((r_h_counter > (640 + 16)) && (r_h_counter < (640 + 16 + 65)));   // active for 64 clocks
     r_v_sync <= ((r_v_counter > (480 +  1)) && (r_v_counter < (480 +  1 +  4)));   // active for  3 clocks
   end
 
